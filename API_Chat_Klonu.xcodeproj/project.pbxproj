@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		B4246594213F780C0069B18B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4246593213F780C0069B18B /* AppDelegate.swift */; };
-		B4246596213F780C0069B18B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4246595213F780C0069B18B /* ViewController.swift */; };
 		B4246599213F780C0069B18B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4246597213F780C0069B18B /* Main.storyboard */; };
 		B424659B213F780C0069B18B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B424659A213F780C0069B18B /* Assets.xcassets */; };
 		B424659E213F780C0069B18B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B424659C213F780C0069B18B /* LaunchScreen.storyboard */; };
 		B42465AF213F99270069B18B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B42465AD213F99270069B18B /* SWRevealViewController.m */; };
+		B42465B5213FB9F00069B18B /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42465B4213FB9F00069B18B /* ChatVC.swift */; };
+		B42465B7213FBA050069B18B /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42465B6213FBA050069B18B /* ChannelVC.swift */; };
 		CB2635E451AF9449A5BE177A /* Pods_API_Chat_Klonu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0335A97F5DB6D4E250F3A2B5 /* Pods_API_Chat_Klonu.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,7 +23,6 @@
 		2C5F893E02ABC8FD7F58A98E /* Pods-API_Chat_Klonu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API_Chat_Klonu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-API_Chat_Klonu/Pods-API_Chat_Klonu.debug.xcconfig"; sourceTree = "<group>"; };
 		B4246590213F780C0069B18B /* API_Chat_Klonu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = API_Chat_Klonu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4246593213F780C0069B18B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B4246595213F780C0069B18B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B4246598213F780C0069B18B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B424659A213F780C0069B18B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B424659D213F780C0069B18B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,6 +30,8 @@
 		B42465AD213F99270069B18B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		B42465AE213F99270069B18B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		B42465B0213F99D40069B18B /* API_Chat_Klonu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "API_Chat_Klonu-Bridging-Header.h"; sourceTree = "<group>"; };
+		B42465B4213FB9F00069B18B /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		B42465B6213FBA050069B18B /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +76,10 @@
 		B4246592213F780C0069B18B /* API_Chat_Klonu */ = {
 			isa = PBXGroup;
 			children = (
+				B42465B3213FB9B00069B18B /* Model */,
+				B42465B2213FB9A90069B18B /* View */,
+				B42465B1213FB99F0069B18B /* Controller */,
 				B4246593213F780C0069B18B /* AppDelegate.swift */,
-				B4246595213F780C0069B18B /* ViewController.swift */,
 				B4246597213F780C0069B18B /* Main.storyboard */,
 				B424659A213F780C0069B18B /* Assets.xcassets */,
 				B424659C213F780C0069B18B /* LaunchScreen.storyboard */,
@@ -92,6 +96,29 @@
 				B42465B0213F99D40069B18B /* API_Chat_Klonu-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B42465B1213FB99F0069B18B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B42465B4213FB9F00069B18B /* ChatVC.swift */,
+				B42465B6213FBA050069B18B /* ChannelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B42465B2213FB9A90069B18B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B42465B3213FB9B00069B18B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C7552432A22089B1C55AC60A /* Pods */ = {
@@ -223,7 +250,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4246596213F780C0069B18B /* ViewController.swift in Sources */,
+				B42465B7213FBA050069B18B /* ChannelVC.swift in Sources */,
+				B42465B5213FB9F00069B18B /* ChatVC.swift in Sources */,
 				B4246594213F780C0069B18B /* AppDelegate.swift in Sources */,
 				B42465AF213F99270069B18B /* SWRevealViewController.m in Sources */,
 			);
