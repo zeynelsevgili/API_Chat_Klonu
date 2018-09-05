@@ -12,9 +12,14 @@
 		B4246599213F780C0069B18B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4246597213F780C0069B18B /* Main.storyboard */; };
 		B424659B213F780C0069B18B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B424659A213F780C0069B18B /* Assets.xcassets */; };
 		B424659E213F780C0069B18B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B424659C213F780C0069B18B /* LaunchScreen.storyboard */; };
+		B42465AF213F99270069B18B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B42465AD213F99270069B18B /* SWRevealViewController.m */; };
+		CB2635E451AF9449A5BE177A /* Pods_API_Chat_Klonu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0335A97F5DB6D4E250F3A2B5 /* Pods_API_Chat_Klonu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0335A97F5DB6D4E250F3A2B5 /* Pods_API_Chat_Klonu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_API_Chat_Klonu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2958E0FD827A8682183A7010 /* Pods-API_Chat_Klonu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API_Chat_Klonu.release.xcconfig"; path = "Pods/Target Support Files/Pods-API_Chat_Klonu/Pods-API_Chat_Klonu.release.xcconfig"; sourceTree = "<group>"; };
+		2C5F893E02ABC8FD7F58A98E /* Pods-API_Chat_Klonu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API_Chat_Klonu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-API_Chat_Klonu/Pods-API_Chat_Klonu.debug.xcconfig"; sourceTree = "<group>"; };
 		B4246590213F780C0069B18B /* API_Chat_Klonu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = API_Chat_Klonu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4246593213F780C0069B18B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4246595213F780C0069B18B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		B424659A213F780C0069B18B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B424659D213F780C0069B18B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B424659F213F780C0069B18B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B42465AD213F99270069B18B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		B42465AE213F99270069B18B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		B42465B0213F99D40069B18B /* API_Chat_Klonu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "API_Chat_Klonu-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB2635E451AF9449A5BE177A /* Pods_API_Chat_Klonu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68019E2984A891FB65EAB59F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0335A97F5DB6D4E250F3A2B5 /* Pods_API_Chat_Klonu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B4246587213F780C0069B18B = {
 			isa = PBXGroup;
 			children = (
+				B42465A5213F97240069B18B /* Supporting Files */,
 				B4246592213F780C0069B18B /* API_Chat_Klonu */,
 				B4246591213F780C0069B18B /* Products */,
+				C7552432A22089B1C55AC60A /* Pods */,
+				68019E2984A891FB65EAB59F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +84,25 @@
 			path = API_Chat_Klonu;
 			sourceTree = "<group>";
 		};
+		B42465A5213F97240069B18B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B42465AE213F99270069B18B /* SWRevealViewController.h */,
+				B42465AD213F99270069B18B /* SWRevealViewController.m */,
+				B42465B0213F99D40069B18B /* API_Chat_Klonu-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7552432A22089B1C55AC60A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C5F893E02ABC8FD7F58A98E /* Pods-API_Chat_Klonu.debug.xcconfig */,
+				2958E0FD827A8682183A7010 /* Pods-API_Chat_Klonu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B42465A2213F780C0069B18B /* Build configuration list for PBXNativeTarget "API_Chat_Klonu" */;
 			buildPhases = (
+				49F04799082376ECCF6C4F8A /* [CP] Check Pods Manifest.lock */,
 				B424658C213F780C0069B18B /* Sources */,
 				B424658D213F780C0069B18B /* Frameworks */,
 				B424658E213F780C0069B18B /* Resources */,
+				7C8BF8473A71332B977C0EF8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +137,7 @@
 				TargetAttributes = {
 					B424658F213F780C0069B18B = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +173,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49F04799082376ECCF6C4F8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-API_Chat_Klonu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C8BF8473A71332B977C0EF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-API_Chat_Klonu/Pods-API_Chat_Klonu-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-API_Chat_Klonu/Pods-API_Chat_Klonu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B424658C213F780C0069B18B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +225,7 @@
 			files = (
 				B4246596213F780C0069B18B /* ViewController.swift in Sources */,
 				B4246594213F780C0069B18B /* AppDelegate.swift in Sources */,
+				B42465AF213F99270069B18B /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,13 +360,18 @@
 		};
 		B42465A3213F780C0069B18B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C5F893E02ABC8FD7F58A98E /* Pods-API_Chat_Klonu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HTTXFBBCYD;
 				INFOPLIST_FILE = API_Chat_Klonu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rngirisim.API-Chat-Klonu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/API_Chat_Klonu-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,13 +379,17 @@
 		};
 		B42465A4213F780C0069B18B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2958E0FD827A8682183A7010 /* Pods-API_Chat_Klonu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HTTXFBBCYD;
 				INFOPLIST_FILE = API_Chat_Klonu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rngirisim.API-Chat-Klonu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/API_Chat_Klonu-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
