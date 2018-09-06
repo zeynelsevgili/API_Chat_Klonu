@@ -14,6 +14,7 @@
 		B42465AF213F99270069B18B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B42465AD213F99270069B18B /* SWRevealViewController.m */; };
 		B42465B5213FB9F00069B18B /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42465B4213FB9F00069B18B /* ChatVC.swift */; };
 		B42465B7213FBA050069B18B /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42465B6213FBA050069B18B /* ChannelVC.swift */; };
+		B42465B9214115350069B18B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42465B8214115350069B18B /* GradientView.swift */; };
 		CB2635E451AF9449A5BE177A /* Pods_API_Chat_Klonu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0335A97F5DB6D4E250F3A2B5 /* Pods_API_Chat_Klonu.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		B42465B0213F99D40069B18B /* API_Chat_Klonu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "API_Chat_Klonu-Bridging-Header.h"; sourceTree = "<group>"; };
 		B42465B4213FB9F00069B18B /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		B42465B6213FBA050069B18B /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		B42465B8214115350069B18B /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		B42465B2213FB9A90069B18B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B42465B8214115350069B18B /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			files = (
 				B42465B7213FBA050069B18B /* ChannelVC.swift in Sources */,
 				B42465B5213FB9F00069B18B /* ChatVC.swift in Sources */,
+				B42465B9214115350069B18B /* GradientView.swift in Sources */,
 				B4246594213F780C0069B18B /* AppDelegate.swift in Sources */,
 				B42465AF213F99270069B18B /* SWRevealViewController.m in Sources */,
 			);
