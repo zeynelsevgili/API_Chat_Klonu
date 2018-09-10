@@ -11,6 +11,9 @@ import UIKit
 // rear view controller oluyor burası.
 class ChannelVC: UIViewController {
     @IBOutlet weak var loginBtn: UIButton!
+    // unwind segue için oluşturduk doğrudan register ekranından ChannelVC ye geri dönecek.
+    // Dikkat "UIStoryboardSegue" deki "Segue" kısmını yazmadığın için 1 gün uğraştın
+    @IBAction func prepareForUnwind(segue: UIStoryboardSegue){}
     
     override func viewDidLoad() {
         super.viewDidLoad()

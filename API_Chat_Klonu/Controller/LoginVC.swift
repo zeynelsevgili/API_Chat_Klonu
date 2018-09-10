@@ -21,5 +21,10 @@ class LoginVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-
+    @IBAction func hesapYoksaWasPressed(_ sender: Any) {
+        
+        performSegue(withIdentifier: TO_REGISTER, sender: nil)
+       
+    }
+    
 }

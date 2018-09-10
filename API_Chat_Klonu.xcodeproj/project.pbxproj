@@ -17,6 +17,9 @@
 		B42465B9214115350069B18B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42465B8214115350069B18B /* GradientView.swift */; };
 		B42465BC21413E970069B18B /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42465BB21413E970069B18B /* Contants.swift */; };
 		B42465BE214145480069B18B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42465BD214145480069B18B /* LoginVC.swift */; };
+		B42465C0214151920069B18B /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42465BF214151920069B18B /* CreateAccountVC.swift */; };
+		B4EAF78C2142898900FD4B4F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EAF78B2142898900FD4B4F /* AuthService.swift */; };
+		B4EAF78E21464A0F00FD4B4F /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EAF78D21464A0F00FD4B4F /* RoundedButton.swift */; };
 		CB2635E451AF9449A5BE177A /* Pods_API_Chat_Klonu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0335A97F5DB6D4E250F3A2B5 /* Pods_API_Chat_Klonu.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,9 @@
 		B42465B8214115350069B18B /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B42465BB21413E970069B18B /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
 		B42465BD214145480069B18B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		B42465BF214151920069B18B /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		B4EAF78B2142898900FD4B4F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		B4EAF78D21464A0F00FD4B4F /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 		B4246592213F780C0069B18B /* API_Chat_Klonu */ = {
 			isa = PBXGroup;
 			children = (
+				B4EAF7882142896400FD4B4F /* Services */,
 				B42465BA21413E040069B18B /* Utilities */,
 				B42465B3213FB9B00069B18B /* Model */,
 				B42465B2213FB9A90069B18B /* View */,
@@ -111,6 +118,7 @@
 				B42465B4213FB9F00069B18B /* ChatVC.swift */,
 				B42465B6213FBA050069B18B /* ChannelVC.swift */,
 				B42465BD214145480069B18B /* LoginVC.swift */,
+				B42465BF214151920069B18B /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -119,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				B42465B8214115350069B18B /* GradientView.swift */,
+				B4EAF78D21464A0F00FD4B4F /* RoundedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,6 +145,14 @@
 				B42465BB21413E970069B18B /* Contants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B4EAF7882142896400FD4B4F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B4EAF78B2142898900FD4B4F /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		C7552432A22089B1C55AC60A /* Pods */ = {
@@ -268,7 +285,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B42465B7213FBA050069B18B /* ChannelVC.swift in Sources */,
+				B4EAF78E21464A0F00FD4B4F /* RoundedButton.swift in Sources */,
 				B42465B5213FB9F00069B18B /* ChatVC.swift in Sources */,
+				B42465C0214151920069B18B /* CreateAccountVC.swift in Sources */,
+				B4EAF78C2142898900FD4B4F /* AuthService.swift in Sources */,
 				B42465BE214145480069B18B /* LoginVC.swift in Sources */,
 				B42465B9214115350069B18B /* GradientView.swift in Sources */,
 				B4246594213F780C0069B18B /* AppDelegate.swift in Sources */,
