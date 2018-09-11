@@ -310,6 +310,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="girisWasPressed:" destination="E6w-pg-aQw" eventType="touchUpInside" id="0fw-te-jBr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -327,6 +330,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="passwordTxtField" destination="afz-7L-Iad" id="8n6-lt-z39"/>
+                        <outlet property="usernameTxtField" destination="BgZ-d9-MoV" id="5bX-ub-FME"/>
                         <segue destination="c9g-oz-PSY" kind="show" identifier="toCreateAccount" id="twT-3Y-NN7"/>
                     </connections>
                 </viewController>
@@ -490,6 +495,7 @@
                     <connections>
                         <outlet property="emailTxt" destination="01y-EG-O9G" id="OjG-Jx-vzd"/>
                         <outlet property="passTxt" destination="NsZ-HJ-p8I" id="3AH-MW-fL8"/>
+                        <outlet property="registerBtn" destination="xdc-fn-E1i" id="umd-i3-A2u"/>
                         <outlet property="userImg" destination="m6b-yU-YcK" id="7nK-7G-wuQ"/>
                         <outlet property="userNameTxtField" destination="vz1-Ib-hE5" id="2s9-ZJ-ohF"/>
                         <segue destination="NNQ-oT-IQx" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="jk6-dl-MWG"/>

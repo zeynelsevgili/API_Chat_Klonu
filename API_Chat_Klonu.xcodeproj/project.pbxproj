@@ -20,6 +20,8 @@
 		B42465C0214151920069B18B /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42465BF214151920069B18B /* CreateAccountVC.swift */; };
 		B4EAF78C2142898900FD4B4F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EAF78B2142898900FD4B4F /* AuthService.swift */; };
 		B4EAF78E21464A0F00FD4B4F /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EAF78D21464A0F00FD4B4F /* RoundedButton.swift */; };
+		B4EAF7B0214706A100FD4B4F /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EAF7AF214706A100FD4B4F /* UIViewExt.swift */; };
+		B4EAF7B221476F7D00FD4B4F /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EAF7B121476F7D00FD4B4F /* UserDataService.swift */; };
 		CB2635E451AF9449A5BE177A /* Pods_API_Chat_Klonu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0335A97F5DB6D4E250F3A2B5 /* Pods_API_Chat_Klonu.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,8 @@
 		B42465BF214151920069B18B /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		B4EAF78B2142898900FD4B4F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		B4EAF78D21464A0F00FD4B4F /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		B4EAF7AF214706A100FD4B4F /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		B4EAF7B121476F7D00FD4B4F /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 			children = (
 				B42465B8214115350069B18B /* GradientView.swift */,
 				B4EAF78D21464A0F00FD4B4F /* RoundedButton.swift */,
+				B4EAF7AF214706A100FD4B4F /* UIViewExt.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				B4EAF78B2142898900FD4B4F /* AuthService.swift */,
+				B4EAF7B121476F7D00FD4B4F /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -289,6 +295,8 @@
 				B42465B5213FB9F00069B18B /* ChatVC.swift in Sources */,
 				B42465C0214151920069B18B /* CreateAccountVC.swift in Sources */,
 				B4EAF78C2142898900FD4B4F /* AuthService.swift in Sources */,
+				B4EAF7B0214706A100FD4B4F /* UIViewExt.swift in Sources */,
+				B4EAF7B221476F7D00FD4B4F /* UserDataService.swift in Sources */,
 				B42465BE214145480069B18B /* LoginVC.swift in Sources */,
 				B42465B9214115350069B18B /* GradientView.swift in Sources */,
 				B4246594213F780C0069B18B /* AppDelegate.swift in Sources */,

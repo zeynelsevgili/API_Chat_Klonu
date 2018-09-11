@@ -9,7 +9,9 @@
 import UIKit
 
 class LoginVC: UIViewController {
-
+    @IBOutlet weak var usernameTxtField: UITextField!
+    @IBOutlet weak var passwordTxtField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,5 +28,20 @@ class LoginVC: UIViewController {
         performSegue(withIdentifier: TO_REGISTER, sender: nil)
        
     }
+    
+    @IBAction func girisWasPressed(_ sender: Any) {
+        
+        guard let email = usernameTxtField.text, usernameTxtField.text != "" else { return }
+        guard let pass = passwordTxtField.text, passwordTxtField.text != "" else { return }
+        
+        AuthService.instance.loginUser(email: email, password: pass) { (success) in
+            
+            if success {
+                print("giriş başarıyla yapıldı")
+            }
+        }
+        
+    }
+    
     
 }
